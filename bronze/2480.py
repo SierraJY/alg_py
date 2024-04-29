@@ -1,6 +1,6 @@
 import sys
 
-sys.stdin = open('input.txt', 'r')
+sys.stdin = open('../input.txt', 'r')
 
 dice = list(map(int, sys.stdin.readline().split()))
 dice_set = set(dice)
@@ -14,3 +14,7 @@ elif len(dice_set) == 2:
             break;
 else:
     print(max(dice_set)*100)
+
+
+# Set 자료형의 유용함
+# Set은 순서가 없기 때문에, Non-Subscribtalbe이고, 인덱스가 없다
