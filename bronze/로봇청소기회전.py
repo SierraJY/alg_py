@@ -19,6 +19,9 @@ def solution(moves):
             now_direction -= 1
             now_direction %= 4 # 초과되는 회전 처리
             #파이썬의 음수 나머지 처리 참고
+            #이것도 가능, 위에는 파이썬만 가능
+            # now_direction += 3
+            # now_direction %= 4  # 초과되는 회전 처리
 
     return now_position
 
