@@ -3,22 +3,22 @@ import sys
 sys.stdin = open('input.txt', 'r')
 
 DR = [-1, 0, 1, 0]
-DC = [0, 1, 0 , -1]
+DC = [0, 1, 0, -1]
 
 N, M = map(int, sys.stdin.readline().split())
 now_r, now_c, now_direction = map(int, sys.stdin.readline().split())
 ROOM = [list(map(int, row.split())) for row in sys.stdin.readlines()]
 
-cleaned_cnt = 0 # 청소횟수
+cleaned_cnt = 0  # 청소횟수
 
 # 비교적 간단한 청소와 복잡한 이동 분리
 while True:
     # 현재 위치 청소
     if ROOM[now_r][now_c] == 0:
-        ROOM[now_r][now_c] = 'c' # 청소된 곳은 'c'로 표시
+        ROOM[now_r][now_c] = 'c'  # 청소된 곳은 'c'로 표시
         cleaned_cnt += 1
 
-    can_clean = False # 옮겨진 위치에서 청소가능 여부
+    can_clean = False  # 옮겨진 위치에서 청소가능 여부
 
     # 청소 실행은 위의 if문 코드에서함
     # 여기 코드부터는 청소기를 옮겨놓음
@@ -29,13 +29,13 @@ while True:
         nr = now_r + DR[now_direction]
         nc = now_c + DC[now_direction]
 
-        if (nr >= 1 and nc >= 1) and (nr<N-1 and nc <M-1) and ROOM[nr][nc] == 0:
+        if (nr >= 1 and nc >= 1) and (nr < N - 1 and nc < M - 1) and ROOM[nr][nc] == 0:
             now_r, now_c = nr, nc
             can_clean = True
             break
 
     # 4방향 모두 청소가된 경우
-    if can_clean == False :
+    if can_clean == False:
         back_direction = now_direction - 2
         back_direction %= 4
 
@@ -47,7 +47,6 @@ while True:
 
         else:
             now_r, now_c = nr, nc
-
 
 print(cleaned_cnt)
 
