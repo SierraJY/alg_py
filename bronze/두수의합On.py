@@ -15,7 +15,7 @@ def solution(nums, target):
     for n1 in nums:
         n2 = target - n1
 
-        #해싵테이블 접근 시간 O(1)
+        #해시테이블 접근 시간 O(1)
         if n2 in nums_cnt:
             return sorted([n1,n2])
         else:

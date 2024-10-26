@@ -1,3 +1,6 @@
+# lambda를 이용한 정렬
+# 리스트 컴프리헨션을 활용한 숏 코딩
+
 import sys
 
 sys.stdin = open("input.txt", 'r')
