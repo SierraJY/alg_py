@@ -2,7 +2,6 @@ def solution(n, moves):
 
     position = [0,0]
 
-    # 상수들은 튜플로 저장해두는 것이 좋다
     directions = ('U', 'R', 'D', 'L')
     dr = (-1, 0, 1, 0)
     dc = (0, 1, 0, -1)
@@ -22,3 +21,5 @@ print(solution(5, 'RRRDDDUUUUUUL'))
 print(solution(7, 'DDDRRRDDLL'))
 print(solution(5, 'RRRRRDDDDDU'))
 print(solution(6, 'RRRRDDDRRDDLLUU'))
+
+# 상수들은 튜플로 저장해두는 것이 좋다

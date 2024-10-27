@@ -11,10 +11,9 @@ ROOM = [list(map(int, row.split())) for row in sys.stdin.readlines()]
 
 cleaned_cnt = 0  # 청소횟수
 
-# 비교적 간단한 청소와 복잡한 이동 분리
 while True:
-    # 현재 위치 청소
-    if ROOM[now_r][now_c] == 0:
+
+    if ROOM[now_r][now_c] == 0:# 현재 위치 청소
         ROOM[now_r][now_c] = 'c'  # 청소된 곳은 'c'로 표시
         cleaned_cnt += 1
 
@@ -52,7 +51,7 @@ print(cleaned_cnt)
 
 
 
-
-
-
+# 무엇(기능)을 구현해야하는지 잘 파악해야함
+# 청소, 회전(청소할 곳 선택), 이동
+# 회전에 원형 배열 이용(나머지 연산자로 초과되는 회전 처리)
 

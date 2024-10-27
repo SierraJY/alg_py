@@ -9,13 +9,11 @@ from collections import defaultdict
 
 def solution(nums, target):
 
-    # defaultdict 인자로 nums 넘길 수 없음
     nums_cnt = defaultdict(int)
 
     for n1 in nums:
         n2 = target - n1
 
-        #해시테이블 접근 시간 O(1)
         if n2 in nums_cnt:
             return sorted([n1,n2])
         else:
@@ -23,7 +21,8 @@ def solution(nums, target):
 
     return [0,0]
 
-
+# defaultdict 인자로 nums 넘길 수 없음, 이터러블을 인자로 사용할 수 없음
+# 해시테이블 접근 시간 O(1)
 
 print(solution([3, 7, 2, 12, 9, 15, 8], 12))
 print(solution([21, 12, 30, 15, 6, 2, 9, 19, 14], 24))

@@ -12,7 +12,7 @@ def solution(nums, k):
     total_sum = sum(nums)
     not_selected_cnt = len(nums)-k
 
-    min_sum_not_selected = sum(nums[:not_selected_cnt])
+    min_sum_not_selected = sum(nums[:not_selected_cnt]) # 첫 번째 슬라이딩 윈도우 값들의 합
 
     for i in range(1, k+1):
         min_sum_not_selected = min(min_sum_not_selected, sum(nums[i:i + not_selected_cnt]))
