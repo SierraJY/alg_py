@@ -6,3 +6,8 @@
 ### 함수 관련
 - queue사용시 popleft 대신 pop 사용
 
+
+
+### DFS/BFS 관련
+- visited_list 방식은 두 알고리즘 모두 사용가능한 방식임
+
