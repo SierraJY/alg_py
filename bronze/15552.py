@@ -8,7 +8,6 @@ for s in sys.stdin.readlines():
     b = int(splited[1])
     print(a+b)
 
-
+# 알아야할 파이썬
 # input() 내장함수는 매우 느린편이다
-# BOJ 채점 원리
-# https://www.acmicpc.net/blog/view/55
+# BOJ 채점 원리 : https://www.acmicpc.net/blog/view/55

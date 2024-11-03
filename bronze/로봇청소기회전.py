@@ -29,4 +29,6 @@ print(solution('GGRGGG'))
 print(solution('GGGGGGGRGGGRGGRGGGLGGG'))
 print(solution('GGLLLGLGGG'))
 
-# 파이썬의 음수 나머지 처리 참고
+# 알아야할 파이썬
+# 파이썬의 모률로 연산자를 통해
+# 순환적 연산을 쉽게 처리할 수 있음 (음수의 모듈로 계산 포함)

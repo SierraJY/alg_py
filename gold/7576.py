@@ -37,4 +37,8 @@ if any(0 in r for r in tomato_box):
 else:
     print(expected_days)
 
+# 알아야할 파이썬
 # Python 에서는 스택과 큐를 따로 제공하지 않고, 둘을 합친 듯한 Deque를 제공함
+
+# 다른 방식
+# 레벨탐색 및 네방향 방식으로 가능할 듯?

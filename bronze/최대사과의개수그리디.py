@@ -4,7 +4,6 @@ def solution(box, limit):
 
     apple_cnt = 0
     for b_n, a_n in box:
-
         tmp_n = min(limit, b_n) # min으로 간단하게 처리
         limit -= tmp_n
         apple_cnt += tmp_n * a_n

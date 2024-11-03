@@ -1,8 +1,7 @@
 from collections import deque
-
 def bfs(tree):
     queue = deque()
-    queue.append(tree[1])
+    queue.append(1)
     level = 0
 
     while queue:
@@ -20,4 +19,9 @@ def bfs(tree):
         print()
 
 bfs([1e9,1,2,3,4,5,6,7]) # 인덱스 0은 편의상 사용 X
+
+
+
+
+
 

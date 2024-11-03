@@ -21,8 +21,12 @@ def solution(nums, target):
 
     return [0,0]
 
-# defaultdict 인자로 nums 넘길 수 없음, 이터러블을 인자로 사용할 수 없음
+# 알게된 것
 # 해시테이블 접근 시간 O(1)
+
+# 알아야할 파이썬
+# defaultdict 인자로 nums 넘길 수 없음, 이터러블을 인자로 사용할 수 없음
+
 
 print(solution([3, 7, 2, 12, 9, 15, 8], 12))
 print(solution([21, 12, 30, 15, 6, 2, 9, 19, 14], 24))
