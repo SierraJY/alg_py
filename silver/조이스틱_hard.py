@@ -9,7 +9,7 @@ def solution(name):
     for i in range(len(name)):
 
         # 현재 위치부터 연속된 A 찾기
-        c_A_l_p = i + 1 # continuos_A_last_pos : c_A_l_p
+        c_A_l_p = i + 1 # continuos_A_last_pos : c_A_l_p, 연속된 A없으면 그냥 다음 위치 가리킴
         while c_A_l_p < len(name) and name[c_A_l_p] == 'A':
             c_A_l_p += 1
             m = c_A_l_p
@@ -18,7 +18,9 @@ def solution(name):
     return trans_cnt + move_cnt
 
 print(solution("JEROEN"))
-print(solution("BCAABCDAAAAAAD"))
+
+
+# 참고 : https://velog.io/@jqdjhy/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%A1%B0%EC%9D%B4%EC%8A%A4%ED%8B%B1-Greedy
 
 # what
 # 조이스틱의 최소 조작 횟수
@@ -38,13 +40,6 @@ print(solution("BCAABCDAAAAAAD"))
 # 주의할 것
 # BF 방식 : 너무 오래 걸림
 # 이 문제가 그리디가 맞긴 한 이유 : 문자 전환 조작 자체는 그리디가 맞긴함
-
-# 알게된 것
-# 순환가능한 배열에서
-# 더 오른쪽에 있는 요소 인덱스와 더 왼쪽에 있는 요소 인덱스를 알아낸 후
-# (오른쪽 인덱스 - 왼쪽 인덱스)
-# (왼쪽 인덱스 + 배열길이 - 오른쪽 인덱스)
-# 위의 두 값 중 작은 값이 최단 거리가 된다
 
 # ABCDEFGHIJKLMOPQRSTUVWXYZ
 # 알파벳 개수 : 26
