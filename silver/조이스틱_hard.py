@@ -9,7 +9,7 @@ def solution(name):
     for i in range(len(name)):
 
         # 현재 위치부터 연속된 A 찾기
-        c_A_l_p = i + 1 # continuos_A_last_pos : c_A_l_p, 연속된 A없으면 그냥 다음 위치 가리킴
+        c_A_l_p = i + 1 # continuos_A_last_pos : c_A_l_p, 연속된 A 없으면 그냥 다음 위치 가리킴
         while c_A_l_p < len(name) and name[c_A_l_p] == 'A':
             c_A_l_p += 1
             m = c_A_l_p

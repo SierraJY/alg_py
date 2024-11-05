@@ -57,5 +57,7 @@ print(solution("JAZ"))
 # ord('Z') - ord('A') + 1 = 26
 
 # 알아야할 파이썬
-# ord()
-# permutations()
+# ord('A') : 문자의 유니코드 값 반환
+# char(97) == 'a' : char은 ord와 반대기능
+
+# permutations([1,2,3], 3) : 길이가 3인 [1,2,3]의 모든 순열 반환
