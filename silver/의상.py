@@ -3,7 +3,7 @@ from collections import defaultdict
 
 def solution(clothes):
     clothes_kind = defaultdict(int)
-    for c, k in clothes:
+    for _, k in clothes:
         clothes_kind[k] += 1
 
     total_cnt = 1
