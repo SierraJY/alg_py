@@ -17,7 +17,7 @@ print(solution("4177252841", 4))
 print(solution("987654321", 5)) #stack[:len(stack)-k]에 대한 이유
 
 # what
-# number에서의 숫자 두 개만 제거했을 떄 얻을 수 있는 가장 큰 숫자 (numbser에서의 순서를 바꿀 수는 없음)
+# number에서의 숫자 k 개만 제거했을 떄 얻을 수 있는 가장 큰 숫자 (numbser에서의 순서를 바꿀 수는 없음)
 
 # how
 # 스택 & 그리디

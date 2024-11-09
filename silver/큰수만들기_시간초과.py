@@ -21,7 +21,7 @@ print(solution("1231234",3))
 print(solution("4177252841",4))
 
 # what
-# number에섯 숫자 두 개만 제거했을 떄 얻을 수 있는 가장 큰 숫자
+# number에섯 숫자 k개만 제거했을 떄 얻을 수 있는 가장 큰 숫자
 # numbser 순서를 바꿀 수는 없나봄
 
 # how
