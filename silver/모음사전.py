@@ -23,4 +23,5 @@ def solution(word):
 
 # 알게된 파이썬
 # 중복조합 : from itertools import product
+# 여러 리스트 간의 데카르트 곱을 반환하는 함수임
 # 일반적인 중복조합 처럼 사용하려면 매개변수 repeat 반드시 명시해야함
