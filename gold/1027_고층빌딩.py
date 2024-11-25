@@ -34,7 +34,6 @@ for flag in range(0,N):
 
 print(max_view_cnt)
 
-
 # what
 # 가장 많은 빌딩이 보이는 빌딩 찾기
 
