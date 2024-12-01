@@ -12,7 +12,7 @@ for _ in range(T):
 
     graph = [[] for _ in range(N)]
     indegree = [0] * N  # 진입 차수 배열
-    dp = [0] * N  # 각 건물을 짓는 데 걸리는 최소 시간
+    dp = [0] * N  # 각 건물을 짓는 데 걸리는 시간
 
     for _ in range(K):
         v1, v2 = map(int, sys.stdin.readline().split())
