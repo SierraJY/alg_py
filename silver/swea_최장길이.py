@@ -18,6 +18,7 @@ def dfs(graph, visited, p_node, p_cnt):
 
 for t in range(T):
     N, M = map(int,input().split())
+
     # 그래프 1부터 사용
     visited = [0 for _ in range(N + 1)]
     graph = [[] for _ in range(N+1)]
