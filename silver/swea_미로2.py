@@ -31,4 +31,5 @@ for t in range(10):
     print(f"#{t+1} {bfs(matrix)}")
 
 # 알게된 것
+# swea 문제를 어떻게든 조금 더 빨리 풀 수 있는 방법 : intput = sys.stdin.readline()
 # matrix의 행을 문자열 공백 없이 줘버리는 swea 문제의 더러움을 느낄 수 있었음
