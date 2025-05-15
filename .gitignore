@@ -15,6 +15,7 @@ src/batch/data/news_archive/*.json
 
 ### macOS ###
 # General
+**/.DS_Store
 .DS_Store
 .AppleDouble
 .LSOverride
